@@ -1,0 +1,34 @@
+
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "name name name login wish cart"
+    "menu blank blank search search search";
+}
+
+.title{
+    grid-area: name;
+}
+
+.login{
+    grid-area: login;
+}
+
+.wishlist{
+    grid-area: wish;
+}
+
+.cart{
+    grid-area: cart;
+}
+
+.menu{
+    grid-area: menu;
+}
+
+.searchbar{
+    grid-area: search;
+}

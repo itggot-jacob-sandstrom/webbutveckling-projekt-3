@@ -1,16 +1,30 @@
+body{
+    margin: 0;
+}
+
 
 
 header{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 50px 30px;
     grid-template-areas: 
     "name name name login wish cart"
     "menu blank blank search search search";
+    /* height: 10px; */
+
+}
+
+.headerbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .title{
     grid-area: name;
+    font-size: 1.8rem;
 }
 
 .login{
@@ -31,4 +45,35 @@ header{
 
 .searchbar{
     grid-area: search;
+}
+    
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.hotitem{
+    border: 2px black solid;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.hotitemcontent{
+    margin: 5px 0 5px 0;
+}
+
+.hotitemtitle{
+    font-size: 2rem;
+}
+
+.hotitemtext{
+    margin-top: 0;
+}
+
+.img350x350{
+    max-width: 350px;
+    max-height: 350px;
 }

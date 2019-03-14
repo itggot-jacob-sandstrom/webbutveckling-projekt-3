@@ -11,12 +11,12 @@
 <body>
     <div class="wrapper">
         <header>
-            <h2 class="title">SäckSHcopp.se</h2>
-            <p class="login">login</p>
-            <i class="material-icons wishlist">face</i>
-            <i class="material-icons cart">face</i>
-            <i class="material-icons menu">menu</i>
-            <input class="searchbar" type="text">
+            <div class="headerbox title"><h2 class="title">SäckSHopp.se</h2></div>
+            <div class="headerbox login"><i class="material-icons login">account_circle</i></div>
+            <div class="headerbox wishlist"><i class="material-icons wishlist">list_alt</i></div>
+            <div class="headerbox cart"><i class="material-icons cart">shopping_cart</i></div>
+            <div class="headerbox menu"><i class="material-icons menu">menu</i></div>
+            <div class="headerbox searchbar"><input class="searchbar" type="text"></div>
         </header>
         <main>
             <%= yield %>

@@ -77,3 +77,12 @@ header{
     max-width: 350px;
     max-height: 350px;
 }
+
+.featured{
+    display: flex;
+
+}
+
+.featureditem{
+    border: black 2px solid;
+}

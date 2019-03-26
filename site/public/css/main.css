@@ -2,7 +2,18 @@ body{
     margin: 0;
 }
 
+.wrapper{
+    background-color: #001970;
+}
 
+a{
+    text-decoration: none;
+}
+
+i, h1, h2, h3, p, a{
+    color: white;
+    margin: 0;
+}
 
 header{
     display: grid;
@@ -11,14 +22,12 @@ header{
     grid-template-areas: 
     "name name name login wish cart"
     "menu blank blank search search search";
-    /* height: 10px; */
-
 }
 
 .headerbox{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-self: center;
+    align-self: center;
 
 }
 
@@ -54,10 +63,10 @@ header{
 .material-icons.md-48 { font-size: 48px; }
 
 .hotitem{
-    border: 2px black solid;
+    border: 2px white solid;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
 }
 
@@ -80,9 +89,51 @@ header{
 
 .featured{
     display: flex;
+    position: relative;
+    animation: rotation 10s   infinite linear;
 
+}
+@keyframes rotation{
+    0%{
+        left: 0;
+
+    }
+
+    100%{
+        left: -100%;
+    }
 }
 
 .featureditem{
-    border: black 2px solid;
+    border: white 2px solid;
+    width: 150px;
+    height: 150px;
+
+}
+
+.sidebar{
+    position: absolute;
+    /* width: 80%; */
+    top: 80px;
+    padding: 10px 40px 30px 10px;
+    /* bottom: 0; */
+    left: -50%;
+    background-color: #303F9F;
+    border: solid 2px white;
+    border-bottom-right-radius: 70px;
+    transition: 300ms;
+}
+
+.sidebar.active{
+    transition: 400ms;
+    left: 0;
+}
+
+.menuitem{
+    
+    font-size: 2rem;
+}
+
+main{
+
 }

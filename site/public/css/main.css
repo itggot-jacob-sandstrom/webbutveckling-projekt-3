@@ -91,7 +91,7 @@ header{
     display: flex;
     position: relative;
     animation: rotation 10s   infinite linear;
-
+    overflow: hidden;
 }
 @keyframes rotation{
     0%{
@@ -136,4 +136,12 @@ header{
 
 main{
 
+}
+
+
+@media only screen and (min-width: 800px){
+
+    .sidebar{
+        left: 0;
+    }
 }
